@@ -14,3 +14,5 @@ adicione a chave ssh no SSH keys do github
 é necessário ter a chave tcc-docker.pem instalada e está no diretório em que está localizada na máquina para ter acesso remoto.
 ### Docker
 ssh -i "tcc-docker.pem" ubuntu@ec2-3-216-242-101.compute-1.amazonaws.com
+### Máquina de monitoramento
+ssh -i "tcc-docker.pem" ubuntu@ec2-44-196-178-218.compute-1.amazonaws.com
