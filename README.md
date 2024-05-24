@@ -13,6 +13,11 @@ adicione a chave ssh no SSH keys do github
 ## Acesso as maquinas
 é necessário ter a chave tcc-docker.pem instalada e está no diretório em que está localizada na máquina para ter acesso remoto.
 ### Docker
-ssh -i "tcc-docker.pem" ubuntu@ec2-3-216-242-101.compute-1.amazonaws.com
-### Máquina de monitoramento
+ssh -i "tcc-docker.pem" ubuntu@ec2-44-194-218-112.compute-1.amazonaws.com
+ip privado 44.194.218.112
+
+### Máquina de vm
 ssh -i "tcc-docker.pem" ubuntu@ec2-44-196-178-218.compute-1.amazonaws.com
+ip privado: 172.31.62.132
+
+git@github.com:dockerTCC/produto-api.git
