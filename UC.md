@@ -27,8 +27,8 @@ O objetivo deste estudo é demonstrar que, utilizando metade dos recursos comput
 1. **Configuração das VMs:**
    - **VM PostgreSQL:**
      - vCPUs: 2
-     - RAM: 2 GB
-     - Disco SSD: 8 GB
+     - RAM: 4 GB
+     - Disco SSD: 16 GB
    - **VM Nginx:**
      - vCPUs: 1
      - RAM: 2 GB
@@ -41,7 +41,7 @@ O objetivo deste estudo é demonstrar que, utilizando metade dos recursos comput
 2. **Configuração do Docker:**
    - **Infraestrutura Total:**
      - vCPUs: 2
-     - RAM: 3 GB
+     - RAM: 4 GB
      - Disco SSD: 12 GB
    - **VM Docker:**
      - vCPUs: 2
@@ -58,7 +58,7 @@ O objetivo deste estudo é demonstrar que, utilizando metade dos recursos comput
      - Criação de contêineres para PostgreSQL, Nginx e a API de Produto dentro desta VM.
 
 2. **Desenvolvimento do Teste de Carga:**
-   - Utilização de ferramentas como Apache JMeter ou locust.io para simular 100.000 usuários acessando a aplicação de produto.
+   - Utilização de ferramentas como Apache JMete para simular 50 usuários fazendo 2000 interações cada, acessando a aplicação de produto e realizando um cadastro no banco de dados.
    - Configuração de cenários de teste idênticos para ambas as infraestruturas (VMs e Docker) para garantir a comparabilidade dos resultados.
 
 3. **Execução dos Testes de Desempenho:**
