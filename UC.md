@@ -58,7 +58,7 @@ O objetivo deste estudo é demonstrar que, utilizando metade dos recursos comput
      - Criação de contêineres para PostgreSQL, Nginx e a API de Produto dentro desta VM.
 
 2. **Desenvolvimento do Teste de Carga:**
-   - Utilização de ferramentas como Apache JMete para simular 50 usuários fazendo 2000 interações cada, totalizando 100.000 acessos, acessando a aplicação de produto e realizando um cadastro no banco de dados.
+   - Utilização de ferramentas como Apache JMete para simular 50 usuários fazendo 1000 interações cada, totalizando 50.000 requisições a aplicação de produto e realizando um cadastro no banco de dados.
    - Configuração de cenários de teste idênticos para ambas as infraestruturas (VMs e Docker) para garantir a comparabilidade dos resultados.
 
 3. **Execução dos Testes de Desempenho:**
@@ -74,8 +74,8 @@ O objetivo deste estudo é demonstrar que, utilizando metade dos recursos comput
    - Avaliação da eficiência do Docker em termos de uso de recursos computacionais em comparação com as VMs.
 
 5. **Resultados Esperados:**
-   - Demonstrar que, com metade dos recursos, o Docker consegue suportar a carga de 100.000 usuários com melhor desempenho ou, pelo menos, desempenho equivalente ao ambiente de VMs.
-   - Evidenciar a eficiência do Docker em termos de gerenciamento de recursos e capacidade de escalar aplicações de maneira mais eficiente.
+   - Demonstrar que, com metade dos recursos, o Docker consegue suportar a carga de 50.000 requisições com melhor desempenho ou, pelo menos, desempenho equivalente ao ambiente de VMs.
+   - Evidenciar a eficiência do Docker em termos de gerenciamento de recursos.
 
 #### Descrição das Ferramentas
 

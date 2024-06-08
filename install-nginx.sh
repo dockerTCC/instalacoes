@@ -2,7 +2,6 @@
 
 # Atualizar a lista de pacotes
 sudo apt update
-
 # Instalar o NGINX
 sudo apt install nginx -y
 
@@ -11,7 +10,7 @@ cat <<EOL | sudo tee /etc/nginx/sites-available/produto-service
 server {
     listen 80;
 
-    server_name localhost;
+    server_name 52.1.224.227;
 
     location /produto-service {
         proxy_pass http://44.196.178.218:8080/produto-api;
@@ -30,7 +29,6 @@ EOL
 
 # Habilitar a configuração do produto-service
 sudo ln -s /etc/nginx/sites-available/produto-service /etc/nginx/sites-enabled/
-
 # Testar a configuração do NGINX
 sudo nginx -t
 
